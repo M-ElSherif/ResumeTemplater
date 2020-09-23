@@ -1,0 +1,12 @@
+﻿@model Link
+
+@{
+    if (Model.Type == LinkType.GitHub)
+    {
+        <a href="http://github.com/@Model.URLPath">Github Profile</a>
+    }
+    else if (Model.Type == LinkType.LinkedIn)
+    {
+        <a href="http://linkedin.com/@Model.URLPath">Linkedin Profile</a>
+    }
+}
